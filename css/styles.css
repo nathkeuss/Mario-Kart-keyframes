@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+}
+
+#bgImage {
+    background-image: url(../img/fond.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 877px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#logo {
+    position: absolute;
+    width: 350px;
+    top: 0%;
+    left: 39%;
+    z-index: 1000;
+    position: fixed;
+    z-index: 10000;
+}
+
+#virage1 {
+    position: absolute;
+    top: -75%;
+    left: -83%;
+    width: 214%;
+    z-index: 1000;
+}
+
+@keyframes toad {
+    80% {
+        transform: translate(70px, 100px);
+    }
+
+    to {
+        transform: translate(50px, 120px);
+    }
+}
+
+#toad {
+    position: absolute;
+    z-index: 2000;
+    top: 26%;
+    left: 66%;
+    width: 113px;
+    animation: toad 2s infinite;
+}
+
+#caparaceVerte {
+    position: absolute;
+    z-index: 2000;
+    width: 100px;
+    left: 49%;
+    top: 55%;
+}
+
+@keyframes kirby {
+    to {
+        transform: scale(1.2);
+    }
+}
+
+#kirby {
+    position: absolute;
+    z-index: 2000;
+    width: 200px;
+    left: 44%;
+    top: 55%;
+    animation: kirby 0.5s infinite
+}
+
+
+#wario {
+    position: absolute;
+    z-index: 2000;
+    width: 358px;
+    left: 9%;
+    top: 75%;
+}
+
+@keyframes carapacerouge {
+    to {
+        transform: translate(0px, 300px) 
+        scale(4);
+    }
+}
+
+#carapaceRouge {
+    position: absolute;
+    z-index: 2000;
+    width: 52px;
+    left: 18%;
+    top: 81%;
+    animation: carapacerouge 1s infinite;
+}
+
+@keyframes bowser {
+    to {
+        transform: rotate(45deg)
+    }
+}
+
+#bowser {
+    position: absolute;
+    z-index: 2000;
+    width: 1292px;
+    left: -29%;
+    top: 79%;
+    animation: bowser 0.5s infinite
+}
+
+@keyframes cadeau {
+    to {
+        transform: translate(500px, -200px)
+        rotate(180deg) scale(1.2);
+    }
+}
+
+#cadeau {
+    position: absolute;
+    z-index: 2000;
+    width: 192px;
+    left: 25%;
+    top: 145%;
+    animation: cadeau 1s infinite;
+}
+
+#virage2 {
+    position: absolute;
+    z-index: 900;
+    top: 176%;
+    left: -169%;
+    width: 277%;
+}
+
+@keyframes boo {
+    to { 
+        transform: translate(-20px, 0px)scale(1.3) 
+        rotate(-20deg);
+    }
+}
+
+#boo {
+    position: absolute;
+    z-index: 2000;
+    top: 278%;
+    left: 53%;
+    width: 11%;
+    animation: boo 0.5s infinite
+}
+
+@keyframes yoshi {
+    to {
+        opacity: 0.1;
+        transform: translate(1100px, 200px)
+    }
+}
+
+#yoshi {
+    position: absolute;
+    z-index: 2000;
+    top: 289%;
+    left: 29%;
+    width: 37%;
+    animation: yoshi 1.1s infinite
+}
+
+@keyframes peach { 
+    20% {
+        transform: translate(150px, 0px)
+        rotate(8deg);
+    }
+    50% {
+        transform: translate(200px, 0px)
+        rotate(-15deg);
+    }
+    to {
+        transform: translate(500px, 0px)
+        rotate(675deg);
+    }
+}
+
+#peach {
+    position: absolute;
+    z-index: 2000;
+    top: 365%;
+    left: 4%;
+    width: 26%;
+    animation: peach 2s infinite;
+}
+
+@keyframes banane {
+    to {
+        opacity: 0.3;
+        transform: translate(100px, -600px)
+        scale(0.5) rotate(1000deg);
+    }
+}
+
+#banane {
+    position: absolute;
+    z-index: 2000;
+    top: 395%;
+    left: 37%;
+    width: 17%;
+    animation: banane 1s infinite;
+}
+
+@keyframes texte {
+    to {
+        opacity: 1;
+        transform: translate(150px, 0px)
+    }
+}
+
+#texte {
+    background-color: white;
+    color: pink;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1900;
+    top: 369%;
+    left: 19%;
+    width: 110px;
+    opacity: 0.5;
+    animation: texte 2s infinite;
+}
